@@ -26,11 +26,11 @@ if( isset($_POST["signup"])) {
             $_POST["email"],  
             $_POST["password"]);
         } else {
-            echo "<script>alert('Password Not Same!');</script>";
+            echo "<script>alert('Password Tidak Sama!');</script>";
         }
 
   } else {
-    echo "<script>alert('Try Again Next Time!');</script>";
+    echo "<script>alert('Coba Lain Waktu!!!');</script>";
   }
 }
 
@@ -44,7 +44,7 @@ if( isset($_POST["signin"])) {
           header("Location: dashboard.php");
 
       } else {
-          echo "<script>alert('Try Again Next Time!');</script>";
+          echo "<script>alert('Please Try Again Later!');</script>";
         }
   }
 }
@@ -249,7 +249,7 @@ if( isset($_POST["signin"])) {
           <div class="modal-body">
             <form method="POST" action="">
               <div class="form-group">
-                <label for="email">Email address</label>
+                <label for="email">Email Address</label>
                 <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email Address..." name="email">
               </div>
               <div class="form-group">
